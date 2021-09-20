@@ -66,3 +66,10 @@ WHERE
     
 -- exercise 1.9
 
+SELECT 
+    p.name, p.price
+FROM
+    Products p
+WHERE
+    p.Price >= 180
+ORDER BY Price DESC , p.name ASC;
