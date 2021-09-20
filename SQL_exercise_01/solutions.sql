@@ -82,3 +82,12 @@ FROM
     Products p
         JOIN
     Manufacturers m ON p.Code = m.Code;
+
+-- exercise 1.11
+
+SELECT 
+    p.name, p.price, m.name AS ManufacturerName
+FROM
+    Products p
+        JOIN
+    Manufacturers m ON p.Code = m.Code;
