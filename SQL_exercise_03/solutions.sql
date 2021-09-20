@@ -69,3 +69,16 @@ WHERE
             Boxes
         WHERE
             Warehouse = Warehouses.code);
+            
+-- exercise 3.10
+SELECT 
+    code
+FROM
+    Boxes
+WHERE
+    Warehouse IN (SELECT 
+            code
+        FROM
+            Warehouses
+        WHERE
+            Location = 'Chicago');
