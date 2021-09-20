@@ -40,3 +40,11 @@ FROM
     Boxes
 GROUP BY Warehouse
 HAVING AvgValue > 150;
+
+-- exercise 3.7
+SELECT 
+    box.code, ware.location
+FROM
+    Boxes box
+        JOIN
+    Warehouses ware ON ware.Code = box.Warehouse;
