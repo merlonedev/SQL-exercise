@@ -101,3 +101,15 @@ FROM
     Departments d ON d.Code = e.Department
 WHERE
     d.Budget > 60000;
+    
+-- exercise 2.13
+
+SELECT 
+    *
+FROM
+    Departments
+WHERE
+    Budget > (SELECT 
+            AVG(budget)
+        FROM
+            Departments);
