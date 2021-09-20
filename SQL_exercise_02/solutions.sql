@@ -57,3 +57,10 @@ FROM
     Employees
 WHERE
     LastName LIKE 'S%';
+    
+-- exercise 2.8
+
+SELECT 
+    SUM(Budget) AS BudgetSum
+FROM
+    Departments;
