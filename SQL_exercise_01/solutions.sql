@@ -109,3 +109,15 @@ FROM
         JOIN
     Products p ON m.Code = p.Code
 GROUP BY m.Name;
+
+-- exercise 1.14
+
+SELECT 
+    m.name AS Manufacturer, AVG(p.Price) AS AvgPrice
+FROM
+    Manufacturers m
+        JOIN
+    Products p ON m.Code = p.Code
+GROUP BY m.Name
+HAVING AvgPrice >= 150;
+
