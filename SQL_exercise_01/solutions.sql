@@ -91,3 +91,11 @@ FROM
     Products p
         JOIN
     Manufacturers m ON p.Code = m.Code;
+    
+-- exercise 1.12
+
+SELECT 
+    AVG(price), Manufacturer
+FROM
+    Products
+GROUP BY Manufacturer;
