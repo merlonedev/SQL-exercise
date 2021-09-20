@@ -73,3 +73,12 @@ FROM
 WHERE
     p.Price >= 180
 ORDER BY Price DESC , p.name ASC;
+
+-- exercise 1.10
+
+SELECT 
+    p.*, m.Name AS ManufacturerName
+FROM
+    Products p
+        JOIN
+    Manufacturers m ON p.Code = m.Code;
