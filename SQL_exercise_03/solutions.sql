@@ -55,3 +55,17 @@ SELECT
 FROM
     Boxes
 GROUP BY Warehouse;
+
+-- exercise 3.9
+select * from Warehouses;
+SELECT 
+    code
+FROM
+    Warehouses
+WHERE
+    capacity < (SELECT 
+            COUNT(*)
+        FROM
+            Boxes
+        WHERE
+            Warehouse = Warehouses.code);
