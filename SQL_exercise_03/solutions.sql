@@ -19,3 +19,9 @@ SELECT DISTINCT
     contents
 FROM
     Boxes;
+    
+-- exercise 3.4
+SELECT 
+    AVG(value)
+FROM
+    Boxes;
