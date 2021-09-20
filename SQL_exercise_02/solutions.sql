@@ -164,3 +164,10 @@ WHERE
 insert into Departments values(11, 'Quality Assurance', 40000);
 insert into Employees values(847219811, 'Mary', 'Moore', 11);
 
+-- exercise 2.17
+SET SQL_SAFE_UPDATES = 0;
+UPDATE Departments 
+SET 
+    Budget = 0.9 * budget;
+    
+
