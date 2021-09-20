@@ -64,3 +64,11 @@ SELECT
     SUM(Budget) AS BudgetSum
 FROM
     Departments;
+    
+-- exercise 2.9
+
+SELECT 
+    COUNT(*) AS Qty, Department
+FROM
+    Employees
+GROUP BY Department;
