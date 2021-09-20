@@ -85,3 +85,6 @@ WHERE
 
 -- exercise 3.11
 insert into Warehouses values(6, 'New York', 3);
+
+-- exercise 3.12
+insert into Boxes values('H5RT', 'Papers', 200, 2);
