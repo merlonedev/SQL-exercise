@@ -99,3 +99,13 @@ SELECT
 FROM
     Products
 GROUP BY Manufacturer;
+
+-- exercise 1.13
+
+SELECT 
+    m.name AS Manufacturer, AVG(p.Price) AS AvgPrice
+FROM
+    Manufacturers m
+        JOIN
+    Products p ON m.Code = p.Code
+GROUP BY m.Name;
