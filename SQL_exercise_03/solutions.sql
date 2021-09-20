@@ -82,3 +82,6 @@ WHERE
             Warehouses
         WHERE
             Location = 'Chicago');
+
+-- exercise 3.11
+insert into Warehouses values(6, 'New York', 3);
