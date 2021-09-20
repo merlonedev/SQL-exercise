@@ -90,3 +90,14 @@ FROM
     Employees e
         JOIN
     Departments d ON d.Code = e.Department;
+    
+-- exercise 2.12
+
+SELECT 
+    e.name, e.LastName
+FROM
+    Employees e
+        JOIN
+    Departments d ON d.Code = e.Department
+WHERE
+    d.Budget > 60000;
