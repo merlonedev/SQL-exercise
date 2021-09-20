@@ -113,3 +113,29 @@ WHERE
             AVG(budget)
         FROM
             Departments);
+            
+-- exercise 2.14
+
+-- using JOIN
+SELECT 
+    d.Name AS Dep
+FROM
+    Employees e
+        JOIN
+    Departments d ON d.Code = e.Department
+GROUP BY Department
+HAVING count(*) > 2;
+
+
+-- using subquery
+SELECT 
+    `Name`
+FROM
+    Departments
+WHERE
+    code IN (SELECT 
+            Department
+        FROM
+            Employees
+        GROUP BY Department
+        HAVING COUNT(*) > 2);
