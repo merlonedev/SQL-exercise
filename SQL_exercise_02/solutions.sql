@@ -81,3 +81,12 @@ FROM
     Employees e
         JOIN
     Departments d ON e.Department = d.Code;
+    
+-- exercise 2.11
+
+SELECT 
+    e.Name, e.LastName, d.Name AS Department, d.Budget
+FROM
+    Employees e
+        JOIN
+    Departments d ON d.Code = e.Department;
