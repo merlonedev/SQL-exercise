@@ -48,3 +48,12 @@ FROM
     Employees
 WHERE
     Department IN (37 , 77);
+    
+-- exercise 2.7
+
+SELECT 
+    *
+FROM
+    Employees
+WHERE
+    LastName LIKE 'S%';
