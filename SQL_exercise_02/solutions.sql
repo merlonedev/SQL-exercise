@@ -72,3 +72,12 @@ SELECT
 FROM
     Employees
 GROUP BY Department;
+
+-- exercise 2.10
+
+SELECT 
+    e.*, d.*
+FROM
+    Employees e
+        JOIN
+    Departments d ON e.Department = d.Code;
