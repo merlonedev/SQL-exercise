@@ -170,4 +170,10 @@ UPDATE Departments
 SET 
     Budget = 0.9 * budget;
     
+-- exercise 2.18
 
+UPDATE Employees 
+SET 
+    Department = 14
+WHERE
+    Department = 77;
