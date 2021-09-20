@@ -25,3 +25,10 @@ SELECT
     AVG(value)
 FROM
     Boxes;
+    
+-- exercise 3.5
+SELECT 
+    Warehouse, AVG(value)
+FROM
+    Boxes
+GROUP BY Warehouse;
