@@ -89,7 +89,12 @@ insert into Warehouses values(6, 'New York', 3);
 -- exercise 3.12
 insert into Boxes values('H5RT', 'Papers', 200, 2);
 
--- exercise 3.11
+-- exercise 3.13
 UPDATE Boxes 
 SET 
     value = value * 0.85;
+    
+-- exercise 3.14
+DELETE FROM Boxes 
+WHERE
+    value < 100;
