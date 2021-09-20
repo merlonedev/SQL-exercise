@@ -121,3 +121,14 @@ FROM
 GROUP BY m.Name
 HAVING AvgPrice >= 150;
 
+-- exercise 1.15
+
+SELECT 
+    name, price
+FROM
+    Products
+WHERE
+    price = (SELECT 
+            MIN(price)
+        FROM
+            Products);
