@@ -57,7 +57,6 @@ FROM
 GROUP BY Warehouse;
 
 -- exercise 3.9
-select * from Warehouses;
 SELECT 
     code
 FROM
@@ -98,3 +97,22 @@ SET
 DELETE FROM Boxes 
 WHERE
     value < 100;
+    
+-- exercise 3.15
+DELETE FROM Boxes 
+WHERE
+    Warehouse IN (SELECT 
+        code
+    FROM
+        Warehouses
+    
+    WHERE
+        capacity < (SELECT 
+            COUNT(*)
+        FROM
+            (SELECT 
+                *
+            FROM
+                Boxes) AS BoxesSub
+        WHERE
+            Warehouse = Warehouses.code));
