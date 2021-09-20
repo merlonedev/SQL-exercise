@@ -32,3 +32,11 @@ SELECT
 FROM
     Boxes
 GROUP BY Warehouse;
+
+-- exercise 3.6
+SELECT 
+    Warehouse, AVG(value) AS AvgValue
+FROM
+    Boxes
+GROUP BY Warehouse
+HAVING AvgValue > 150;
