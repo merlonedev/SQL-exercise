@@ -88,3 +88,8 @@ insert into Warehouses values(6, 'New York', 3);
 
 -- exercise 3.12
 insert into Boxes values('H5RT', 'Papers', 200, 2);
+
+-- exercise 3.11
+UPDATE Boxes 
+SET 
+    value = value * 0.85;
