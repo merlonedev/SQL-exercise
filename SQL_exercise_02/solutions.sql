@@ -42,3 +42,9 @@ WHERE
     
 -- exercise 2.6
 
+SELECT 
+    *
+FROM
+    Employees
+WHERE
+    Department IN (37 , 77);
