@@ -195,3 +195,7 @@ WHERE
     
     WHERE
         budget >= 60000);
+        
+-- exercise 2.21
+
+delete from Employees;
