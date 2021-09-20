@@ -183,3 +183,15 @@ WHERE
 DELETE FROM Employees 
 WHERE
     Department = 14;
+    
+-- exercise 2.20
+
+DELETE FROM Employees 
+WHERE
+    Department IN (SELECT 
+        code
+    FROM
+        Departments
+    
+    WHERE
+        budget >= 60000);
