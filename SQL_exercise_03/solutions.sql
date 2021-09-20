@@ -48,3 +48,10 @@ FROM
     Boxes box
         JOIN
     Warehouses ware ON ware.Code = box.Warehouse;
+    
+-- exercise 3.8
+SELECT 
+    Warehouse, COUNT(*)
+FROM
+    Boxes
+GROUP BY Warehouse;
