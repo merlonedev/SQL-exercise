@@ -139,3 +139,28 @@ WHERE
             Employees
         GROUP BY Department
         HAVING COUNT(*) > 2);
+        
+-- exercise 2.15
+
+SELECT 
+    `Name`, LastName
+FROM
+    Employees
+WHERE
+    Department = (SELECT 
+            sub.code
+        FROM
+            (SELECT 
+                *
+            FROM
+                Departments d
+            ORDER BY d.Budget
+            LIMIT 2) sub
+        ORDER BY Budget DESC
+        LIMIT 1);
+        
+-- exercise 2.16
+
+insert into Departments values(11, 'Quality Assurance', 40000);
+insert into Employees values(847219811, 'Mary', 'Moore', 11);
+
