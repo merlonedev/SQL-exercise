@@ -177,3 +177,9 @@ SET
     Department = 14
 WHERE
     Department = 77;
+
+-- exercise 2.19
+
+DELETE FROM Employees 
+WHERE
+    Department = 14;
